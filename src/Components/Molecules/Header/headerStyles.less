@@ -1,0 +1,58 @@
+@import "../../../styles/palette.less";
+@import "../../../styles/media.less";
+
+.headerContainer {
+	button{
+		background: red;
+	}
+	width: 81%;
+	margin: 0 auto;
+	padding: 2rem 0 ;
+	position: fixed;
+	left: 9.8%;
+	background: @primary_bg;
+	z-index: 99999999;
+
+	@media @mediumScreen  {
+		width: 100%;
+		padding: 5%;
+		left: 0;
+		right: 0;
+	}
+	
+	@media @mediumScreen @mediaOL  {
+		width: 40%;
+		right: auto;
+	}
+
+	h1 {
+		color: white;
+		font-size: 50px;
+		margin-bottom: 2rem;
+
+		@media @mediumScreen  {
+			font-size: 30px;
+			margin-bottom: 2rem;
+		}
+
+	}
+
+	h3 {
+		font-size: 25px;
+		margin-top: 0;
+		color: gray;
+		font-weight: 300;
+
+		@media @mediumScreen  {
+			font-size: 18px;
+		}
+
+		b {
+			font-weight: 600;
+		}
+	}
+
+
+
+}
+

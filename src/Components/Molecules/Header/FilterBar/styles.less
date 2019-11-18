@@ -1,0 +1,53 @@
+@import "../../../../styles/palette.less";
+@import "../../../../styles/media.less";
+
+.filterButtonsGroup{
+	position: fixed; 
+	top: 3rem;
+	right: 10%;
+
+	@media @mediumScreen  {
+		bottom: 0px;
+		left: 0;
+		top: auto;
+		height: 60px;
+		width: 100%;
+		z-index: 999999999;
+		background: black;
+		color: white;
+		border-radius: 0;
+	}
+
+
+	@media @mediumScreen @mediaOL  {
+		right: 5%;
+		left: auto;
+		height: 30px;
+		width: 50%;
+		z-index: 999999999;
+		color: white;
+	}
+
+	button {
+		@media @mediumScreen  {
+			border-radius: 0!important;
+			background: black!important;
+			color: white!important;
+		
+			
+		}
+		@media @mediumScreen @mediaOL  {
+			border-radius: 0px!important;
+		}
+	}
+
+	.activeBTN {
+		background: rgba(255,255,255, 0.5)!important;
+		@media @mediumScreen  {
+			background:#1f1f21!important;
+	
+		}
+
+	} 
+
+}

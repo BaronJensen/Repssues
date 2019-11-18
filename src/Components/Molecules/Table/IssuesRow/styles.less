@@ -1,0 +1,94 @@
+@import "../../../../styles/palette.less";
+@import "../../../../styles/media.less";
+
+.rowContainer{
+	border: none;
+	background: #0b0c11;
+	color: gray;
+	transition: 0.4s;
+	z-index: 1;
+	&:hover{
+		background: rgba(255,255,255,0.2);
+	}
+	@media @mediumScreen{
+		margin-top: -15px;
+		background: #0b0c11;
+		
+
+		&:hover{
+			background: #0b0c11;
+		}
+	}	
+
+	.cellItem{
+	
+
+	.separator{
+		height: 1px;
+		width: 100%;
+		background: gray;
+
+	}
+
+	.hiddenBig{
+			display: none;
+	}
+
+	.link{
+		font-size: 12px;
+		color: white;
+	}
+
+	.linkIcon {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 9px !important;
+	}
+
+
+
+
+	@media @mediumScreen{
+
+		&.title {
+			font-size: 16px!important;
+			line-height: 26px;
+			color: white!important;
+		}
+
+
+
+		margin: 1rem 2rem!important;
+
+		span {
+			font-size: 20px;
+			margin-left: 0.5rem;
+		}
+
+
+		.hiddenBig {
+			display: inline-block!important;
+		}
+
+	
+	  	.linkIcon {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			color: gray;
+			font-size: 14px !important;
+		}
+
+
+	}
+	}
+
+}
+
+
+
+	
+
+
+
