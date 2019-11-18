@@ -9,13 +9,14 @@ type Props = {
   totalIssues: number, 
   currentPage: number,
   issuesLimit: number,
+  loading: bool,
 }
 
 type NewPage = {
  activePage: number
 }
 
-const CustomPagination = React.memo<Props>(({changePagination, appendPagination, totalIssues, currentPage, issuesLimit}: Props) => {
+const CustomPagination = React.memo<Props>(({changePagination, appendPagination, totalIssues, currentPage, issuesLimit, loading}: Props) => {
 
   const handlePaginationChange = (e:SyntheticEvent<HTMLButtonElement> , { activePage }: NewPage) =>  changePagination(activePage);
   const appendPage = () => appendPagination(currentPage + 1)
@@ -43,7 +44,7 @@ const CustomPagination = React.memo<Props>(({changePagination, appendPagination,
             </Responsive>
 
             <Responsive as={Grid} centered maxWidth={768}>
-              <Button onClick={appendPage}>Load more</Button>
+              {loading?<Button disabled>Please wait</Button>:<Button onClick={appendPage}>Load more</Button>}
             </Responsive>
 
         </React.Fragment>

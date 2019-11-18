@@ -213,6 +213,7 @@ class Home extends Component<Props, State> {
                       loading = {this.state.loading} />
 
                     <Pagination
+                      loading = {this.state.loading}
                       issuesLimit = {this.props.issuesLimit}
                       appendPagination = {this.appendPagination.bind(this)}
                       changePagination = {this.changePagination.bind(this)}
