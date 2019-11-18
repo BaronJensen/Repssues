@@ -8,8 +8,6 @@ import {
   GITHUB_API_REPO
 } from "./Components/Constants/githubApi"
 
-import "./App.less"
-
 
 const App = ()=>{
 
