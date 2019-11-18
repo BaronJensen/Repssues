@@ -14,7 +14,7 @@ git clone https://github.com/BaronJensen/Repssues.git
 
 #### 2. Install packages
 ```bash
- cd ./respssues 
+ cd ./repssues 
 npm install
 ```
 
@@ -54,7 +54,7 @@ npm run test
 - API CALLS optimization caching data from API.
 
 
-## UI Components Arquitecture
+## UI Components Architecture
 
 - **ErrorCard** (Molecule)
 
@@ -90,10 +90,10 @@ Component <Table> of type Molecule composed with <LoadingItems>, <IssuesRow> and
 ```
 
 
-- **Home** (View) <- [History, Search]
+- **Home** (View) <- [Header, Table, Pagination]
 
 ```
-Component <Home> of type View uses 
+Component <Home> of type View and uses <Header>, <Table>, <Pagination>
 
 ```
 
